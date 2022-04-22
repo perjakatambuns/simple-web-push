@@ -31,7 +31,7 @@
 		echo json_encode($nodes);
 	}else{
 		$nodes['status'] = false;
-		$nodes['data'] = '';
+		$nodes['data'] = [];
 		echo json_encode($nodes);
 	}
 ?>
