@@ -12,6 +12,6 @@ if(isset($_GET['id'],$_GET['node'],$_GET['status'],$_GET['user'],$_GET['count'],
 	$uniq = str_pad(rand(0,999), 5, "0", STR_PAD_LEFT);
 	
 	$data = $id.'|'.$node.'|'.$count.'|'.$status.'|'.$user.'|'.$ip.'|'.$resolve.'|'.$date1.'|'.$date2;
-	file_put_contents('log_ssh_'.date("j.n.Y").'.log', $data."\n", FILE_APPEND);
+	file_put_contents('log/log_ssh_'.date("j.n.Y").'.log', $data."\n", FILE_APPEND);
 }
 ?>

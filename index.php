@@ -1,7 +1,7 @@
 <?php
 	header('Content-Type: application/json; charset=utf-8');
-	if(file_exists('log_ssh_'.date("j.n.Y").'.log')){
-		$file = fopen('log_ssh_'.date("j.n.Y").'.log','r');
+	if(file_exists('log/log_ssh_'.date("j.n.Y").'.log')){
+		$file = fopen('log/log_ssh_'.date("j.n.Y").'.log','r');
 		$nodes['status'] = true;
 		$nodes['data'] = array();
 		while (($line = stream_get_line($file, 1024 * 1024, "\n")) !== false) {
